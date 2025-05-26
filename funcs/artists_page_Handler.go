@@ -30,11 +30,7 @@ func ArtistPage(w http.ResponseWriter, r *http.Request) {
 	for i := range artists {
 		if artists[i].ID == id {
 			selectedArtist = &artists[i]
-			// if len(selectedArtist.GeoCoordinates) == 0 {
-			// 	geolocated := GeolocateLocations([]Artist{*selectedArtist})
-			// 	*selectedArtist = geolocated[0]
 
-			// }
 			break
 		}
 	}

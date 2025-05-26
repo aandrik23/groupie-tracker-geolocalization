@@ -19,7 +19,7 @@ type Artist struct {
 	Locations      `json:"-"`
 	Dates          `json:"-"`
 	Relations      `json:"-"`
-	GeoCoordinates map[string]GeoResult `json:"geoCoordinates"` // New field
+	GeoCoordinates map[string]GeoResult `json:"geoCoordinates"`
 }
 
 type Locations struct {
